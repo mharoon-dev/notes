@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PaperPage from "./Pages/PaperPage/PaperPage.jsx";
 import BookPage from "./Pages/BookPage/BookPage.jsx";
+import "./App.css"
 
 // Papers data
 const papers = [
@@ -35,7 +36,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1>My Notes Website</h1>
+        <h1>Notes For Grade 4th</h1>
         <Routes>
           <Route
             path="/"
