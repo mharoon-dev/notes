@@ -10,7 +10,7 @@ const papers = [
     id: 1,
     name: "تفسیرجلالین + زبدۃ الأتقان",
     books: [
-      { name: "تفسیرجلالین", pdfs: ["تفسیر جلالین کے ۳۵۷ سوالات.pdf", "(mcqs) تفسیر جلالین.pdf", "فائنل نوٹس تفسیر جلالین.pdf", "جلالین16تا19 الفاظ معانی.pdf","تعریفات نورالانوار.pdf"] },
+      { name: "تفسیرجلالین", pdfs: ["تفسیر جلالین کے ۳۵۷ سوالات.pdf", "(mcqs) تفسیر جلالین.pdf", "فائنل نوٹس تفسیر جلالین.pdf", "جلالین16تا19 الفاظ معانی.pdf", "تعریفات نورالانوار.pdf"] },
       { name: "زبدۃ الأتقان", pdfs: ["فائنل نوٹس زبدۃ الأتقان.pdf", "book2_part2.pdf"] }
     ]
   },
@@ -66,11 +66,11 @@ function App() {
                 <h2>Subjects</h2>
                 <ul>
                   {papers?.map((paper) => (
-                    <li key={paper.id}>
-                      <Link to={`/paper/${paper.id}`}>
+                    <Link to={`/paper/${paper.id}`}>
+                      <li key={paper.id}>
                         {paper.name}
-                      </Link>
-                    </li>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
