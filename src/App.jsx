@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PaperPage from "./Pages/PaperPage/PaperPage.jsx";
 import BookPage from "./Pages/BookPage/BookPage.jsx";
 
-
+// Papers data
 const papers = [
   {
     id: 1,
@@ -28,10 +28,8 @@ const papers = [
     books: [
       { name: "Book 1", pdfs: ["book1_part1.pdf"] }
     ]
-  },
-  // Add other papers similarly
+  }
 ];
-
 
 function App() {
   return (
@@ -39,7 +37,6 @@ function App() {
       <div>
         <h1>My Notes Website</h1>
         <Routes>
-
           <Route
             path="/"
             element={
@@ -55,16 +52,8 @@ function App() {
               </div>
             }
           />
-          {/* Paper Page: Display Books List */}
-          <Route
-            path="/paper/:id"
-            element={<PaperPage papers={papers} />}
-          />
-          {/* Book Page: Display PDF links */}
-          <Route
-            path="/paper/:paperId/book/:bookId"
-            element={<BookPage papers={papers} />}
-          />
+          <Route path="/paper/:id" element={<PaperPage papers={papers} />} />
+          <Route path="/paper/:paperId/book/:bookId" element={<BookPage papers={papers} />} />
         </Routes>
       </div>
     </BrowserRouter>
