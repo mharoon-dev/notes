@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PaperPage from "./Pages/PaperPage/PaperPage.jsx";
 import BookPage from "./Pages/BookPage/BookPage.jsx";
 
@@ -45,7 +45,9 @@ function App() {
                 <ul>
                   {papers?.map((paper) => (
                     <li key={paper.id}>
-                      <a href={`/paper/${paper.id}`}>{paper.name}</a>
+                      <Link to={`/paper/${paper.id}`}>
+                        {paper.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
