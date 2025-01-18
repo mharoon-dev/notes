@@ -8,10 +8,10 @@ import "./App.css"
 const papers = [
   {
     id: 1,
-    name: "Paper 1",
+    name: "تفسیرجلالین + زبدۃ الأتقان",
     books: [
-      { name: "Book 1", pdfs: ["book1_part1.pdf", "book1_part2.pdf"] },
-      { name: "Book 2", pdfs: ["book2_part1.pdf", "book2_part2.pdf"] }
+      { name: "تفسیرجلالین", pdfs: ["تفسیر جلالین کے ۳۵۷ سوالات.pdf", "(mcqs) تفسیر جلالین.pdf", "فائنل نوٹس تفسیر جلالین.pdf", "جلالین16تا19 الفاظ معانی.pdf","تعریفات نورالانوار.pdf"] },
+      { name: "زبدۃ الأتقان", pdfs: ["فائنل نوٹس زبدۃ الأتقان.pdf", "book2_part2.pdf"] }
     ]
   },
   {
@@ -29,7 +29,28 @@ const papers = [
     books: [
       { name: "Book 1", pdfs: ["book1_part1.pdf"] }
     ]
-  }
+  },
+  {
+    id: 4,
+    name: "Paper 3",
+    books: [
+      { name: "Book 1", pdfs: ["book1_part1.pdf"] }
+    ]
+  },
+  {
+    id: 5,
+    name: "نورالانوار",
+    books: [
+      { name: "نورالانوار", pdfs: ["سوال_جواب نورالانوار.pdf"] }
+    ]
+  },
+  {
+    id: 6,
+    name: "کافیہ",
+    books: [
+      { name: "کافیہ", pdfs: ["فائنل نوٹس کافیہ.pdf"] }
+    ]
+  },
 ];
 
 function App() {
