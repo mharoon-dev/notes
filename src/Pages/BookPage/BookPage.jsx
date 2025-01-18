@@ -14,7 +14,7 @@ function BookPage({ papers }) {
       <ul>
         {book.pdfs.map((pdf, index) => (
           <li key={index}>
-            <a href={`/public/assets/pdfs/${pdf}`} target="_blank" rel="noopener noreferrer">
+            <a href={`/assets/pdfs/${pdf}`} target="_blank" rel="noopener noreferrer">
               {pdf}
             </a>
           </li>
